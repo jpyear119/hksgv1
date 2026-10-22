@@ -1,0 +1,12 @@
+{
+  "train": "data/portable/TRAIN70.json.gz",
+  "dev": "data/portable/DEV23.json.gz",
+  "split": "data/study/split.json",
+  "clocks": "data/raw/Videos",
+  "annotations": "data/annotations",
+  "features": "data/features",
+  "video_sources": "data/video_sources.json",
+  "clip_snapshot": "models/clip-vit-base-patch32",
+  "feature_python": "tools/baseline-env/Scripts/python.exe",
+  "ffprobe": "tools/ffmpeg/bin/ffprobe.exe"
+}

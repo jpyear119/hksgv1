@@ -1,0 +1,21 @@
+# Local inputs, pretrained CLIP, environments and private machine config
+/data/
+/models/
+/paths.json
+/tools/
+/.venv/
+/.vscode/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.log
+
+# Only the small frozen Lite artifact and its receipt are shared from results.
+/results/*
+!/results/DEV23_FINAL_20261020_1019/
+/results/DEV23_FINAL_20261020_1019/*
+!/results/DEV23_FINAL_20261020_1019/train/
+/results/DEV23_FINAL_20261020_1019/train/*
+!/results/DEV23_FINAL_20261020_1019/train/HGKS_LITE_MODEL.joblib
+!/results/DEV23_FINAL_20261020_1019/train/TRAIN_RECEIPT.json

@@ -1,0 +1,20 @@
+{
+  ".gitattributes": "068b057a194d679822b52e7f2a6b54a96db2c06115ec255e55a5d5b457fbb9a5",
+  ".gitignore": "b4ba0b131b02dc87c5a75239bac0281471b1a0538034d707bbd2c0d64e63ca81",
+  "README.md": "b2f6f6452c47a739ae97d50cab2cec789b651e6c550ac3a95b2e613d5b523efc",
+  "baselines.py": "e96b4cc2341a52f900ae8d7dfe463a707cd5e7a0eb517248b504827aaf6620e7",
+  "data.py": "5984c6eac3012205cc8f84691bb894d0aa2660cb46a84608bfad41afabf4e42e",
+  "evaluate.py": "63ca2815f34d8979646dab19ef2fcf3a4c8d2c094a7a8c2883f29432bf48a146",
+  "paths.example.json": "dc6ca87ccabc10d0fcccd9a6792a62011eb6c53f97fc6503f2542255affd9f4a",
+  "predict.py": "8adcf4a4929e323ce4935cbe1d4e22cd1fb927ffb312a75ca64a7ec3b67d6839",
+  "prepare.py": "caafd6aa229259e1561a3bd67132318777d86033a5cf3648b4fa669f9492d9dc",
+  "reports/dev23_fine_count_0_0p5.csv": "c0caebad8630555547412c9dcb36bfcfc3009b159846a4af49464d1722078a96",
+  "requirements-baselines.txt": "403cd214825760689d7c78e1747045da9d73d12fc2012ba9a1949ca22587c6b8",
+  "requirements.txt": "3c81253fdb78d959dc2b65d4fbf37deaca6e7b8745384f278b3c9077df3a5da1",
+  "results/DEV23_FINAL_20261020_1019/train/HGKS_LITE_MODEL.joblib": "893e6304635956e08dc579e672f26ed93e745980c3979ad0d49df46210b661b1",
+  "results/DEV23_FINAL_20261020_1019/train/TRAIN_RECEIPT.json": "ec49b30bebc7c91e7a726f7be6ebc7063ac78c2ac8a25c485e553eb544654499",
+  "run1019.py": "d8a60a1bccb378a809c461d6f1825d13c62492794f83accb9ee7427e4508993f",
+  "tests/compare_fine_budget.py": "4343622c5f0c5e6b303c9af5bdf54bef34736af382825e8c1281cd17416da77f",
+  "train.py": "5cabe69f55f6fd48ee775e3fc3756afd09f657eeaf702e5aec6641ed93f934da",
+  "vision.py": "8a829451eb9268e016f72a22b298e730786c37662c6e781ba088d6634c211cc0"
+}
