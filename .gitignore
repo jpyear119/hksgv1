@@ -19,3 +19,14 @@ __pycache__/
 /results/DEV23_FINAL_20261020_1019/train/*
 !/results/DEV23_FINAL_20261020_1019/train/HGKS_LITE_MODEL.joblib
 !/results/DEV23_FINAL_20261020_1019/train/TRAIN_RECEIPT.json
+
+# BT evaluation: keep raw generated outputs and unreviewed Gold local.
+/reports/bt_quality/
+/GPT_PUBLIC/
+/PRIVATE/
+/gold_LOCKED/
+/reviewed/
+/bt_quality_review/
+/bt_raw/
+/BT_OUTPUT.json
+/HD_EPIC_Narrations.pkl
