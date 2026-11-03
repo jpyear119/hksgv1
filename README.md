@@ -285,3 +285,28 @@ python evaluate.py score --predictions results/FINE_COUNT_T0/native/1017_LITE_FI
 | R5 | Alec Radford 等，*Learning Transferable Visual Models From Natural Language Supervision*，2021 | [CLIP 论文](https://arxiv.org/abs/2103.00020)。这是共享预训练特征编码器的来源，并不是本表另一个独立选帧 baseline。 |
 
 Uniform、Random 属于常规控制策略，MaxVol HSV 是本地机制对照，不为它们补造“对应的官方论文”。
+
+
+## 11. 下游 BT 质量比较（2026-11-03 起）
+
+本节评价 `关键帧 → GPT 生成的行为树`，**与上面的 Fine Action 选帧时间覆盖率是两个独立实验**。原 `predict.py`、`train.py`、`baselines.py`、`vision.py` 和 `run1019.py` 均未为此改变。
+
+- [BT质量评分代码](bt_quality/score_bt.py)：项目 JSON 结构、动作TP/FP/FN与F1、纯Sequence顺序。
+- [多方法比较入口](bt_quality/compare.py)：输出 `BT_METHOD_COMPARISON.csv` 和回溯清单。
+- [固定评价协议v1.0](docs/BT_评价协议_v1.0.md)：人工Gold、动作粒度、顺序依赖、证据和执行评价定义。
+- [中文接入说明](docs/BT_质量评价接入说明.md)：输入文件、运行命令、人工审核及隐私边界。
+- [轻量单元测试](tests/test_bt_quality.py)：不会下载模型或调用GPT。
+
+运行测试：
+
+`python -m unittest discover -s tests -p test_bt_quality.py -v`
+
+查看比较命令参数：
+
+`python -m bt_quality.compare --help`
+
+有方法表与原始BT时（路径按本地数据位置替换）：
+
+`python -m bt_quality.compare --methods "D:\BT\LATEST_BT_METHOD_TABLE.csv" --bt-root "D:\BT\GPT_PUBLIC\jobs" --out "reports\bt_quality"`
+
+**当前证据边界：** 历史30条方法记录中24份含原始BT，P08已有7个参考动作的临时覆盖试点，但**没有完成全范围的人工Gold或正式Action F1**。结构可解析不代表动作正确，且机器人仿真成功率尚未测量。未审核的BT、Gold、视频、图片及GPT原始会话材料不提交本公开仓库。
